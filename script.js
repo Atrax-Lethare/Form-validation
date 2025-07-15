@@ -97,5 +97,3 @@ secondToggle.click(function(){
         $("#confirmPassword").attr('type', 'password');
     }
 })
-
-paraskenuskhe

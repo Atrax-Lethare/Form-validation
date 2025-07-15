@@ -1,0 +1,96 @@
+/* Properties universal for all elements. */
+
+* {
+    font-family: 'Playfair Display';
+    font-size: 20px;
+}
+
+/* Properties for the body element. */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Properties for the wrapper element (the division that contains the form elements and the errror message box. */
+
+.wrapper {
+    margin: 0 auto;
+}
+
+/* Properties for the labels of all the input fields. */
+
+label {
+    width: 200px;
+    float: left;
+    margin-top: 12px;
+    position: relative;
+}
+
+/* Properties for all the input fields. */
+
+input {
+    width: 320px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 12px 5px;
+}
+
+/* Properties for all the form elements. */
+
+.formElement {
+    margin-bottom: 10px;   
+}
+
+/* Properties for the 'submit' button. */
+
+#submitButton {
+    width: 130px;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+/* Properties for the error message box. */
+
+#errors {
+    text-align: center;
+    border: 2px transparent solid;
+    margin: 15px;
+    padding: 10px 50px;
+    border-radius: 15px;
+}
+
+/* Properties for the division that contains both - password input field and shoe/hide toggle button. */
+
+#secure {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Properties for the passwords input fields. */
+
+#password, #confirmPassword {
+    width: 270px;
+    border-right: transparent;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Properties for the show/hide toggle button. */
+
+#toggle1, #toggle2 {
+    width: 50px;
+    background-color: transparent;
+    border-radius: 0 5px 5px 0;
+    border-left: transparent;
+    border-right: 1px black solid;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    cursor: pointer;
+    font-size: 12px;
+}
+

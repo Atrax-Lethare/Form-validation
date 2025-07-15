@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation System</title>
+    <!-- Script tag for the jQuery online file, additional for javascript file. -->
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>   
+    <link rel="stylesheet" href="styles.css">   <!-- Stylesheets file for the webpage. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">   <!-- Link tags for the font with the name "PLayfair Display". -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <div class="wrapper">   <!-- A container to store the form as well as the errors box. -->
+            <div class="formElement">   <!-- Division for storage of element of the form. -->
+                <label for="email">Email: </label>   <!-- Label and input field for EMail -->
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            
+            <div class="formElement">   <!-- Division for storage of element of the form. -->
+                <label for="phone">Phone number: </label>   <!-- Label and input field for phone number -->
+                <input type="text" id="number" name="number" placeholder="Enter you phone number">
+            </div>
+            
+            <div class="formElement">   <!-- Division for storage of element of the form. -->
+                <label for="password">Password: </label>   <!-- Label and input field for password -->
+                <div id="secure">
+                    <input type="password" id="password" name="password" placeholder="Create password">
+                    <button id="toggle1">Show</button>   <!-- Show/Hide funtionality -->
+                </div>
+            </div>
+            
+            <div class="formElement">   <!-- Division for storage of element of the form. -->
+                <label for="confirm">Confirm-password: </label>   <!-- Label and input field for confirmimg the password -->
+                <div id="secure">  
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter the password">
+                    <button id="toggle2">Show</button>   <!-- Show/Hide funtionality -->
+                </div>
+            </div>
+            <!-- Submit button which explains if the account is created or if there are any errors. -->
+            <input type="submit" name="submit" id="submitButton">
+        </div>
+        <div id="errors"></div>   <!-- The container which displays the errors or the success of account creation. -->
+    <script src="script.js"></script>   <!-- Script tag for the javascript code, for the functionality of the webpage. -->
+</body>
+</html>
+
